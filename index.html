@@ -15,10 +15,29 @@
             <div class="row">
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button class="btn btn-primary" id="searchButton" onclick="searchPokemon()">Search!</button>
+                        <button class="btn btn-primary" id="searchButton" onClick="searchPokemon()">Search!</button>
                     </span>
                     <input type="text" class="form-control" placeholder="Search for a pokemon by name or PokeDex number" id="searchPoke">
                 </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">Search for:</span>
+                        <span class="input-group-addon">
+                            <input type="checkbox" name="option" id="id" onclick="checkBoxes(this)">  PokéDex ID #
+                        </span>
+                        <span class="input-group-addon">
+                            <input type="checkbox" name="option" id="types" onclick="checkBoxes(this)">  Types
+                        </span>
+                        <span class="input-group-addon">
+                            <input type="checkbox" name="option" id="sprites" onclick="checkBoxes(this)">  Sprites
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
             </div>
             <br>
             <table class="table table-bordered" id="mainTable">
